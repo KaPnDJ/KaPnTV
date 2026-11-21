@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KaPnTV</title>
+  <meta name="description" content="KaPnTV is a home-screen launcher for Android TV and Google TV.">
+  <link rel="icon" href="logo.png">
+  <style>
+    :root {
+      --bg: #00030d;
+      --panel: #0b1120;
+      --line: #1c2740;
+      --text: #eef2fb;
+      --muted: #a9b3c9;
+      --accent: #3b82f6;
+      --grad: linear-gradient(135deg, #00c8ff 0%, #2563ff 55%, #7c3aed 100%);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 20px 64px; }
+    header { text-align: center; margin-bottom: 40px; }
+    header img { width: 150px; height: 150px; border-radius: 28px; }
+    h1 { font-size: 2.6rem; margin: 18px 0 6px; letter-spacing: -0.02em; }
+    .tagline { color: var(--muted); font-size: 1.15rem; margin: 0; }
+    .bar { height: 4px; width: 96px; margin: 22px auto 0; border-radius: 4px; background: var(--grad); }
+    section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 24px 26px;
+      margin: 18px 0;
+    }
+    h2 { font-size: 1.25rem; margin: 0 0 10px; }
+    p { margin: 0 0 10px; }
+    ul { margin: 0; padding-left: 1.2em; }
+    li { margin: 4px 0; }
+    a { color: #7cc4ff; }
+    .links { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 30px; }
+    .button {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .button.primary { background: var(--grad); border: 0; color: #fff; }
+    footer { color: var(--muted); font-size: 0.9rem; text-align: center; margin-top: 36px; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="logo.png" alt="KaPnTV logo: a house with four app tiles">
+    <h1>KaPnTV</h1>
+    <p class="tagline">A home screen for Android TV and Google TV.</p>
+    <div class="bar"></div>
+  </header>
+
+  <section>
+    <h2>What it is</h2>
+    <p>KaPnTV replaces your TV's home screen with a fast, customisable launcher: a floating dock
+      of your apps, previews of what each app is offering, and rows of everything else below.
+      It runs entirely on your TV. There is no KaPnTV account and no KaPnTV server.</p>
+  </section>
+
+  <section>
+    <h2>Features</h2>
+    <ul>
+      <li>A dock of your favourite apps, with Continue watching and recommendations above each one</li>
+      <li>Rows of apps and content below the dock, which you can rename, reorder and edit</li>
+      <li>Recent apps, quick settings, HDMI inputs, weather, network and Bluetooth status</li>
+      <li>Themes, picture and video backgrounds, icon packs, and a PIN lock</li>
+      <li>Optional: connect YouTube to see <em>Latest from your subscriptions</em> and <em>Liked videos</em></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>YouTube (optional)</h2>
+    <p>If you choose to connect YouTube in <strong>Settings ▸ Accounts</strong>, KaPnTV asks Google
+      for <strong>read-only</strong> access to your YouTube account. It uses that access only to
+      show your subscriptions' latest videos and your liked videos on your TV, and to open them in
+      the YouTube app. Your data stays on your TV and is never sold or shared.
+      You can disconnect at any time, which also removes KaPnTV's access from your Google account.
+      Read the <a href="privacy.html">privacy policy</a> for details.</p>
+  </section>
+
+  <div class="links">
+    <a class="button primary" href="privacy.html">Privacy policy</a>
+    <a class="button" href="https://github.com/KaPnDJ/KaPnTV">KaPnTV on GitHub</a>
+  </div>
+
+  <footer>
+    KaPnTV is an independent project and is not affiliated with or endorsed by Google, YouTube or
+    any streaming service. Android TV, Google TV and YouTube are trademarks of Google LLC.
+  </footer>
+</main>
+</body>
+</html>
